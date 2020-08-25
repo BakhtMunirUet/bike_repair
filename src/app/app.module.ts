@@ -17,9 +17,10 @@ const routes: Routes = [
   {
     path: 'home', children: [
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'quarries', component: QuarriesComponent }
+      { path: 'quarries', component: QuarriesComponent, pathMatch:'full' }
     ]
   },
+
 ];
 
 @NgModule({
@@ -28,7 +29,7 @@ const routes: Routes = [
     HomeComponent,
     QuarriesComponent,
     LoginComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
